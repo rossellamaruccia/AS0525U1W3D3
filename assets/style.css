@@ -1,4 +1,5 @@
 body{
+    width: 100%;
     background-color: blanchedalmond;
     color:rgb(84, 49, 49);
     font-family: 'Roboto', 'Arial', sans-serif;
@@ -13,22 +14,28 @@ h1{
   margin: 1em, 0;
 }
 
-form{
-    
-}
 
 form input {
     width: 30%;
     margin: 1rem;
+    border: 1px transparent;
+    height: 30px;
 }
 
 li{
     font-size: 20px;
     list-style-type: none;
+    display: block;
+    
 }
 
-#deleteButton{
-    display: block;
-    width: 20px;
-    height: 20px;
+button{
+    display: inline-block;
+    height: 30px;
+
+    margin-left: 10px;
+    margin-bottom: 5px;
+    border: 1px transparent;
+    background-color: rgb(84, 49, 49);
+    color: blanchedalmond;
 }

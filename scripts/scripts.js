@@ -7,11 +7,10 @@ const handleFormSubmit = function (e) {
 
     const todoInput = document.getElementById('thingToDo');
     let newValue = todoInput.value;
-    console.log(newValue);
 
     const listArea = document.getElementById('listArea');
     const listElement = document.createElement('li');
-    listElement.innerHTML = `<li>${newValue}</li>`;
+    listElement.innerHTML = `${newValue}`;
 
     listArea.appendChild(listElement);
     listElement.style.cursor = "pointer";
@@ -20,17 +19,22 @@ const handleFormSubmit = function (e) {
         
     listElement.style.textDecoration = 'line-through'
     }
+
+    // eventlistener x text strike
     listElement.addEventListener('click', strikeElement)
 
     const deleteButton = document.createElement('button')
-    deleteButton.setAttribute('id', 'deleteButton')
+    
     deleteButton.setAttribute('type', 'button')
+
     deleteButton.innerText = "delete this"
 
     listElement.append(deleteButton)
+    
     const deleteElement = function (e) {
          e.target.parentElement.remove()
     }
+    // event listener x click on delete button
     deleteButton.addEventListener('click', deleteElement)
 
 }
