@@ -2,21 +2,24 @@ body{
     background-color: blanchedalmond;
     color:rgb(84, 49, 49);
     font-family: 'Roboto', 'Arial', sans-serif;
+    text-align: center;
 }
 
 h1{
     font-family: "BBH Sans Bogle", sans-serif;
   font-weight: 400;
   font-style: normal;
-  text-align: center;
+  
   margin: 1em, 0;
 }
 
 form{
-    text-align: center;
+    
 }
 
 form input {
     width: 30%;
     margin: 1rem;
 }
+
+

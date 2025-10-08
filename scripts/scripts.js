@@ -14,7 +14,16 @@ const handleFormSubmit = function (e) {
     listElement.innerHTML = `<li>${newValue}</li>`;
 
     listArea.appendChild(listElement);
+    listElement.style.cursor = "pointer";
+
+    const strikeElement = function () {
+        
+    listElement.style.textDecoration = 'line-through'
+    }
+    listElement.addEventListener('click', strikeElement)
 
 }
 
 form.addEventListener('submit', handleFormSubmit)
+
+
