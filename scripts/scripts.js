@@ -22,6 +22,17 @@ const handleFormSubmit = function (e) {
     }
     listElement.addEventListener('click', strikeElement)
 
+    const deleteButton = document.createElement('button')
+    deleteButton.setAttribute('id', 'deleteButton')
+    deleteButton.setAttribute('type', 'button')
+    deleteButton.innerText = "delete this"
+
+    listElement.append(deleteButton)
+    const deleteElement = function (e) {
+         e.target.parentElement.remove()
+    }
+    deleteButton.addEventListener('click', deleteElement)
+
 }
 
 form.addEventListener('submit', handleFormSubmit)
